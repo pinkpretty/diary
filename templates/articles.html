@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<body>
+<h2> Here is the list of articles you posted. Click on article to edit / delete it</h2>
+<hr>
+
+{% for article in articles %}
+
+   <h3> <a href="/articles/{{article.id}}">{{article.title}} </a> </h3>
+
+{% endfor %}
+
+</body>
+
+{% endblock %}

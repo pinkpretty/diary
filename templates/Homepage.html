@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <body>
+        <div class = "jumbotron text-center" id = "home">
+        <h2> Welcome to the personal online diary </h2>
+        <p class = "lead"> Write your own diary on online and keep it secret with you only.
+        You can see at any time you want . We will host it for you at free of cost </p>
+         <p class="lead">Register now to write your own diary online</p>
+            <br><br>
+        {% if session.logged_in == NULL %}
+            <a href ="/register" class = "btn btn-primary btn-lg" >Register</a>
+            <a href="/login" class = "btn btn-success btn-lg">Login</a>
+
+            {% endif %}
+</div>
+
+</body>
+
+{% endblock %}

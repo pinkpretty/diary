@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type = "text/css">
+            body {
+            background-image: url("diary1.jpg");
+                }
+        h1 {
+             background-image: url("diary1.jpg");
+             }
+        p {
+                background-color: white;
+                background-color: rgba(255, 255, 255, .85);
+           }
+ </style>
+
+</style>
+</head>
+
+        <meta charset="UTF-8">
+        <title>My Diary</title>
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body background="https://commons.wikimedia.org/wiki/Category:Diaries#/media/File:August_M%C3%BCller_Tagebucheintrag.jpg">
+        {% include 'includes/_navbar.html' %}
+        <div class = "container">
+            {% include 'includes/_message.html' %}
+            {% block body %}
+
+            {% endblock %}
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdn.ckeditor.com/4.7.2/basic/ckeditor.js"></script>
+        <script type="text/javascript">
+            CKEDITOR.replace('editor')
+        </script>
+
+    </body>
+</html>
